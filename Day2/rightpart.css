@@ -1,0 +1,41 @@
+.profile-right-div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 70%;
+}
+.right-top-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    margin: 2rem;
+
+}
+span{
+    color: maroon;
+    font-weight: 500;
+}
+.right-bottom-div{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 2rem;
+    padding: 10px;
+}
+.career-objective p:last-of-type{
+    color: rgb(24, 8, 57);
+    text-align: justify;
+    line-height: 25px;
+}
+.experience-div ul, .languages ul, .hobbies ul{
+   color: rgb(24, 8, 57);
+   line-height: 25px;
+   margin-left: 10px;
+}
+.hobbies ul{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>SSPL | Arya P.G.</title>
+      <link rel="stylesheet" href="style1.css" />
+   </head>
+   <body>
+      <div class="container">
+         <!-- Navbar -->
+         <div class="navbar">
+            <!-- logo -->
+            <div class="logo">
+               <img src="logo.webp" alt="logo" />
+               <div class="companyName">
+                  <span>Satyaansh Softech</span>
+                  Pvt. Ltd.
+               </div>
+            </div>
+
+            <!-- Menu-Items -->
+            <ul class="daysLink">
+               <li onclick="loadPage('day1/index.html')">Day 1</li>
+               <li onclick="loadPage('day2/index.html')">Day 2</li>
+               <li onclick="loadPage('day3/index.html')">Day 3</li>
+            </ul>
+
+            <!-- right button -->
+            <button class="hamburger">
+               <img src="hamburger.png" alt="menu" />
+            </button>
+         </div>
+
+         <!-- Days -->
+         <iframe
+            id="dayFrame"
+            src="day1/index.html"
+            width="100%"
+            height="800">
+         </iframe>
+      </div>
+      <script>
+         const hamburger = document.querySelector(".hamburger");
+         const daysLink = document.querySelector(".daysLink");
+
+         hamburger.addEventListener("click", () => {
+            daysLink.classList.toggle("active");
+         });
+
+         function loadPage(page) {
+           let frame= document.getElementById("dayFrame")
+           frame.src = page;
+         }
+      </script>
+   </body>
+</html>
