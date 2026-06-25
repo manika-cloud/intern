@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>adding </title>
+</head>
+<body>
+   First number <input type="text" id="n1">
+   Second number <input type="text" id="n2">
+   <button onclick="add()">add</button>
+   <script>
+    function add(){
+        let n1=Number(document.getElementById("n1").value);
+        let n2=Number(document.getElementById("n2").value);
+        let sum=n1+n2;
+        alert("sum="+sum)
+    }
+   </script>
+</body>
+</html>
