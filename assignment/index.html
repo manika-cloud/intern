@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!---navbar-->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="WhatsApp Image 2026-06-29 at 16.35.49.jpeg" alt="logo image">
+        </div>
+        <div class="hamburger">≡</div>
+        <ul class="nav-links">
+            <li>Home</li>
+            <li>Services</li>
+            <li>Products</li>
+            <li>About</li>
+        </ul>
+    </nav>
+    <script>
+        const hamburger=document.querySelector(".hamburger");
+        const navLinks=document.querySelector(".nav-links");
+
+
+        hamburger.addEventListener("click",()=>{navLinks.classList.toggle("active");
+            
+        })
+    </script>
+    <section class="hero">
+        <video autoplay muted loop>
+            <source src="WhatsApp Video 2026-06-30 at 10.37.42.mp4" type="video/mp4" >
+        </video>
+
+        <div class="overlay"></div>
+
+        <div class="content">
+            <h1>Naaz Noor Edit</h1>
+            <p class="para">
+                Welcome to a world of timeless Indian fashion—where every designer suit is crafted with elegance, luxury, and unmatched attention to detail.
+            </p>
+            <div class="buttons">
+                <button>Explore Services</button>
+                <button class="btn2">Contact Us</button>
+            </div>
+        </div>
+    </section>
+    <div class="container"> 
+      <div class="product">
+        <img src="suit1.webp" alt="" />
+        <h2>Deaigner Red salwar suit</h2>
+        <p>₹5,999</p>
+        <button class="btn3">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="suit2.jpeg" alt="">
+        <h2>Classy Shrara suit </h2>
+        <p>₹4,999</p>
+        <button class="btn3">Add To Cart</button>
+      </div>
+      <div class="product">
+        <img src="suit3.jpg" alt="" />
+        <h2>Beautiful Royal blue suit </h2>
+        <p>₹9,999</p>
+        <button class="btn3">Add To Cart</button>
+    </div>
+    <div class="product">
+        <img src="suit4.jpg" alt="" />
+        <h2> Slit Coral suit </h2>
+        <p>₹2,999</p>
+        <button class="btn3">Add To Cart</button>
+    </div>
+    
+    <!-- Footer -->
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-box">
+            <h2>NaazNoor</h2>
+            <p>
+                Discover premium fashion that blends elegance,
+                comfort, and timeless style for every occasion.
+            </p>
+        </div>
+
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-box">
+            <h3>Customer Care</h3>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">FAQs</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-box">
+            <h3>Contact</h3>
+            <p>Email: manikanaaz@gmail.com</p>
+            <p>Phone: +91 9876543210</p>
+            <p>Haryana, India</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 NaazNoor. All Rights Reserved.
+    </div>
+
+</footer>
+</body>
+</html>
