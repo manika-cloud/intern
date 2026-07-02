@@ -49,7 +49,7 @@
 }
 
 .daysLink li {
-   color: #b65454;
+   color: rgb(84, 84, 240);
    padding: 2px;
    border-bottom: 2px solid transparent;
    border-radius: 3px;
@@ -58,8 +58,8 @@
 }
 
 .daysLink li:hover {
-   border-color: #c6df38;
-   color: #ee2e2e;
+   border-color: cornflowerblue;
+   color: navy;
 }
 
 /* Button */
