@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter App</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <div class="d1">
+        <h1>Counter App</h1>
+        <button id="dec">-</button>
+        <span id="counterValue">0</span>
+        <button id="inc">+</button>
+    <div>
+         <button id="restart">Restart</button>
+    </div>
+    </div>
+
+    <script>
+        let counterTag=document.querySelector("#counterValue");
+        let counterValue=localStorage.getItem("counterValue");
+        const incBtn=document.querySelector("#inc");
+        const decBtn=document.querySelector("#dec");
+        const restartBtn=document.querySelector("#restart");
+
+        counterTag.innerHTML=counterValue;
+        incBtn.addEventListener("click",()=>{
+            counterValue++;
+            console.log(counterValue);
+            counterTag.innerHTML=counterValue;
+            localStorage.setItem("counterValue",counterValue);
+        });
+        decBtn.addEventListener("click",()=>{
+            if(counterValue>0){
+                counterValue--;
+            }
+            console.log(counterValue);
+            counterTag.innerHTML=counterValue;
+            localStorage.setItem("counterValue",counterValue);
+        });
+        restartBtn.addEventListener("click",()=>{
+            counterValue=0;
+            counterTag.innerHTML=counterValue;
+            localStorage.setItem("counterValue",counterValue);
+        });
+
+        localStorage.setItem("name","Manika");
+    </script>
+</body>
+</html>
