@@ -13,8 +13,11 @@
             <img src="WhatsApp Image 2026-06-29 at 16.35.49.jpeg" alt="Logo">
         </div>
         <div class="cart">
-         <button id="b7"><img src="cart.webp" alt=""></button>
-        </div>
+        <button id="b7" onclick="openCart()">
+        <img src="cart.webp" alt="">
+        <span id="cart-count">0</span>
+    </button>
+</div>
         <ul class="nav-links">
             <li><a href="#">Home</a></li>
             <li><a href="#">Services</a></li>
@@ -50,63 +53,64 @@
         <h2>Deaigner Red salwar suit</h2>
         <p>₹2,999</p>
         <p class="p3">⭐4.0</p>
-        <button class="btn3">Add to Cart</button>
+        <button class="btn3" onclick="addToCart(this)">Add to Cart</button>
+        
       </div>
       <div class="product">
         <img src="suit2.jpeg" alt="">
         <h2>Classy Shrara suit </h2>
         <p>₹4,999</p>
         <p class="p3">⭐3.7</p>
-        <button class="btn3">Add To Cart</button>
+        <button class="btn3" onclick="addToCart(this)">Add To Cart</button>
       </div>
       <div class="product">
         <img src="suit6.webp" alt="" />
         <h2>Beautiful Royal blue suit </h2>
         <p>₹3,999</p>
         <p class="p3">⭐4.2</p>
-        <button class="btn3">Add To Cart</button>
+        <button class="btn3" onclick="addToCart(this)">Add To Cart</button>
     </div>
     <div class="product">
         <img src="suit4.jpg" alt="" />
         <h2> Slit Coral suit </h2>
         <p>₹2,999</p>
         <p class="p3">⭐3.6</p>
-        <button class="btn3">Add To Cart</button>
+        <button class="btn3" onclick="addToCart(this)">Add To Cart </button>
     </div>
     <div class="product">
         <img src="suit5.jpg" alt="" />
         <h2> Classic Black suit </h2>
         <p>₹1,999</p>
         <p class="p3">⭐4.3</p>
-        <button class="btn3">Add To Cart</button>
+        <button class="btn3" onclick="addToCart(this)">Add To Cart</button>
     </div>
     <div class="product">
         <img src="suit7.webp" alt="" />
         <h2> Cotton Green suit  </h2>
         <p>₹1,200</p>
         <p class="p3">⭐2.7</p>
-        <button class="btn3">Add To Cart</button>
+        <button class="btn3" onclick="addToCart(this)">Add To Cart</button>
     </div>
     <div class="product">
         <img src="suit8.jpg" alt="" />
         <h2> Anarkali suit </h2>
         <p>₹1,500</p>
         <p class="p3">⭐4.8</p>
-        <button class="btn3">Add To Cart</button>
+        <button class="btn3" onclick="addToCart(this)">Add To Cart</button>
     </div>
     <div class="product">
         <img src="suit9.jpg" alt="" />
         <h2> 3-piece suit </h2>
         <p>₹2,999</p>
         <p class="p3">⭐4.5</p>
-        <button class="btn3">Add To Cart</button>
+        <button class="btn3" onclick="addToCart(this)">Add To Cart</button>
     </div>
     <div class="product">
         <img src="suit10.jpg" alt="" />
         <h2> 3-piece with short jacket </h2>
         <p>₹2,500</p>
         <p class="p3">⭐4.2</p>
-        <button class="btn3">Add To Cart</button>
+        <button class="btn3" onclick="addToCart(this)">Add To Cart</button>
     </div>
 
      <div class="product">
@@ -114,8 +118,26 @@
         <h2> Stylish designer suit </h2>
         <p>₹1,499</p>
         <p class="p3">⭐3.9</p>
-        <button class="btn3">Add To Cart</button>
+        <button class="btn3" onclick="addToCart(this)">Add To Cart</button>
     </div>
+
+
+    <div id="cartBox" class="cart-box">
+
+    <div class="cart-header">
+        <h2>Shopping Cart</h2>
+        <button id="closeBtn" onclick="closeCart()">✖</button>
+    </div>
+
+    <div id="cartItems">
+
+    </div>
+
+    <div class="cart-footer">
+        <h3 id="totalPrice">Total : ₹0</h3>
+    </div>
+
+</div>
 <footer class="footer">
 
     <div class="footer-container">
@@ -162,5 +184,6 @@
     </div>
 
 </footer>
+<script src="script.js"></script>
 </body>
 </html>
